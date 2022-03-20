@@ -11,10 +11,10 @@ type HeaderProps = {
 const Header = ({ countries }: HeaderProps) => (
   <HeaderWrapper>
     <HeaderItem>Game name</HeaderItem>
-    {Object.keys(countries).map((col) => (
-      <HeaderItem key={col}>{col}</HeaderItem>
+    {Object.keys(countries).map((country) => (
+      <HeaderItem key={country}>{country}</HeaderItem>
     ))}
-    <HeaderItem>total</HeaderItem>
+    <HeaderItem>Total</HeaderItem>
   </HeaderWrapper>
 );
 
